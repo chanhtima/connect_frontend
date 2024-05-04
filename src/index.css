@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.section-container {
+  @apply px-12 md:px-24 py-8
+}
+
+.contion {
+  @apply px-4 xs:px-8 md:px-12 lg:px-24
+}
+
+.bg-home {
+  background-image: url("/images/Splide/h1-bg-section4\ 1.png");
+  background-size: cover;
+}
+
+.splide__pagination {
+  bottom: -2em !important;
+}
+
+.bg-tmp-top {
+  @apply bg-[30%];
+  background-image: url("/images/Splide/bg-tmp1.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.bg-tmp-bottom {
+  @apply bg-[30%];
+  background-image: url("/images/Splide/bg-tmp2.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.card_dashboard {
+  @apply col-span-3 h-40 p-4 flex flex-col justify-between rounded-lg shadow-md ;
+}
