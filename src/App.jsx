@@ -7,6 +7,7 @@ import DashboardLayout from "./Layout/DashboardLayout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ProductIndex from "./pages/Dashboard/products/ProductIndex";
 import Products from "./pages/Dashboard/products/Products";
+import About from './pages/Users/about/About'
 
 function App() {
   const isAuthenticated = !!localStorage.getItem("token");
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<UserLayout />}>
           <Route index element={<Home />} />
+          <Route path="/about" element={<About/>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
         <Route
@@ -28,6 +30,7 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="product" element={<ProductIndex />} />
             <Route path="product/:id" element={<Products />} />
+            <Route path="product/create" element={<Products />} />
           </Route>
         ) : (
           <Route path="/dashboard" element={<Navigate to="/login" />} />
