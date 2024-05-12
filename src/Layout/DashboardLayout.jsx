@@ -10,7 +10,7 @@ function DashboardLayout() {
     <>
       <div className="flex max-lg:flex-col text-grey-1 ">
         <LeftSideBar />
-        <div className="flex-1 section-container my-12">
+        <div className="flex-1 section-container my-12 min-h-[55rem] ">
           <Outlet />
         </div>
       </div>

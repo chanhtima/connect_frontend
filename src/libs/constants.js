@@ -31,7 +31,7 @@ export const navAdminLinks = [
     label: "Product",
   },
   {
-    url: "/news",
+    url: "/dashboard/news",
     label: "News",
   },
   {
