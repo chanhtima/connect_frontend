@@ -95,7 +95,7 @@ function NewsIndex() {
                       <img
                         src={`data:${el.NE_image[0].image_type};base64,${el.NE_image[0].image}`}
                         alt="Product Image"
-                        className="object-cover mx-auto w-10 h-10"
+                        className="object-cover mx-auto w-auto h-20"
                       />
                     )}
                   </div>

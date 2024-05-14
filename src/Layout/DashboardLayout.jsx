@@ -1,11 +1,9 @@
 import React from "react";
-import { Outlet,  } from "react-router-dom";
-
+import { Outlet } from "react-router-dom";
+import BackToTopButton from "../components/BackToTopButton";
 import LeftSideBar from "./LeftSideBar";
 
-
 function DashboardLayout() {
-
   return (
     <>
       <div className="flex max-lg:flex-col text-grey-1 ">
@@ -14,6 +12,7 @@ function DashboardLayout() {
           <Outlet />
         </div>
       </div>
+      <BackToTopButton />
     </>
   );
 }

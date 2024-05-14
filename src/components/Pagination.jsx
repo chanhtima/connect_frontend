@@ -17,7 +17,7 @@ const Pagination = ({ search, onPageChange }) => {
       <button
         onClick={handlePrevPage}
         disabled={search.page === 1}
-        className="btn mr-2 btn-circle"
+        className="btn mr-2 btn-circle "
       >
         <IoIosArrowBack size={20} />
       </button>
@@ -25,8 +25,8 @@ const Pagination = ({ search, onPageChange }) => {
         <button
           key={i}
           onClick={() => onPageChange(i + 1)}
-          className={`btn btn-circle ${
-            search.page === i + 1 ? "bg-green-3" : ""
+          className={`btn btn-circle hover:bg-gray-1 ${
+            search.page === i + 1 ? " bg-dark-blue text-white" : ""
           }`}
         >
           {i + 1}

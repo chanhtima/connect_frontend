@@ -1,11 +1,14 @@
 import axios from "axios";
 import { API_END_POINT_URL } from "../config/env";
 
+
+const token = localStorage.getItem("token")
+
 const defaultAxios = axios.create({
   baseURL: API_END_POINT_URL,
   headers: {
     "Content-Type": "application/json",
-    Authorization: `Bearer ${localStorage.getItem("token")}`,
+    Authorization: `Bearer ${token}`,
   },
 });
 
