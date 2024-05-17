@@ -8,7 +8,7 @@ function UserLayout() {
   return (
     <div className=" h-screen flex flex-col justify-between">
       <Narbar />
-      <div className="section-container">
+      <div>
         <Outlet />
       </div>
      <Footer/>

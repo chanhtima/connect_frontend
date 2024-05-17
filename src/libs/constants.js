@@ -1,3 +1,8 @@
+import Cimage from "/images/aerial-view-cargo-ship-cargo-container-harbor 1.png";
+import Cimage2 from "/images/Screenshot 2023-09-08 090234 1.png";
+import Cimage3 from "/images/Screenshot 2023-09-08 103729 1.png";
+import Cimage4 from "/images/Screenshot 2023-09-08 104328 2.png";
+
 export const navLinks = [
   {
     url: "/",
@@ -8,7 +13,7 @@ export const navLinks = [
     label: "About us",
   },
   {
-    url: "/Products",
+    url: "/products",
     label: "Products",
   },
   {
@@ -37,5 +42,35 @@ export const navAdminLinks = [
   {
     url: "/contact",
     label: "Contact",
+  },
+];
+export const category_product = [
+  {
+    label: "rewMaterials",
+    name: "Rew Materials",
+    detail:
+      "We are striving to import the high quality and exclusive products ",
+    image: Cimage,
+  },
+  {
+    label: "foodBeverage",
+    name: "Food & Beverage",
+    detail:
+      "We are striving to import the high quality and exclusive products ",
+    image: Cimage3,
+  },
+  {
+    label: "tobacco",
+    name: "Tobacco",
+    detail:
+      "We are striving to import the high quality and exclusive products ",
+    image: Cimage4,
+  },
+  {
+    label: "etc",
+    name: "Etc.",
+    detail:
+      "We are striving to import the high quality and exclusive products ",
+    image: Cimage2,
   },
 ];

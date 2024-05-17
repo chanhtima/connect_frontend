@@ -9,7 +9,7 @@ body {
 }
 
 .section-container {
-  @apply px-12 md:px-24 py-8
+  @apply px-12 md:px-24  xl:px-40 py-16
 }
 
 .contion {
@@ -41,4 +41,12 @@ body {
 
 .card_dashboard {
   @apply col-span-3 h-40 p-4 flex flex-col justify-between rounded-lg shadow-md ;
+}
+
+.text-head{
+  @apply font-semibold text-[34px]
+}
+
+.btn_link{
+  @apply btn bg-dark-blue hover:bg-dark-blue/95 text-white rounded-2xl px-8
 }

@@ -1,13 +1,13 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import UserLayout from "./Layout/UserLayout";
-import Home from "./pages/Users/home/Home";
+import Home from "./pages/Users/Home";
 import Login from "./pages/Login";
 import DashboardLayout from "./Layout/DashboardLayout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ProductIndex from "./pages/Dashboard/products/ProductIndex";
 import Products from "./pages/Dashboard/products/Products";
-import About from './pages/Users/about/About'
+import About from './pages/Users/About'
 import NewsIndex from "./pages/Dashboard/news/NewsIndex";
 
 function App() {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getNewsAll } from "../../../api/newsApi";
 import { RiDeleteBin2Fill, RiPencilFill } from "react-icons/ri";
-import { formatDate } from "../../../libs/formatDate";
+import formatDataTH from "../../../libs/formatDataTH";
 import Pagination from "../../../components/Pagination";
 function NewsIndex() {
   const [data, setData] = useState([]);
@@ -76,7 +76,7 @@ function NewsIndex() {
             <tr>
               <th className="text-lg">No.</th>
               <th className="text-lg min-w-[10rem]">รูปภาพ</th>
-              <th className="text-lg min-w-[8rem]">วันที่</th>
+              <th className="text-lg min-w-[9rem]">วันที่</th>
               <th className="text-lg min-w-[15rem]">ชื่อ</th>
               <th className="text-lg min-w-[12rem]">รายละเอียดอย่างย่อ</th>
               <th className="text-lg min-w-[7rem]" />
@@ -100,8 +100,7 @@ function NewsIndex() {
                     )}
                   </div>
                 </td>
-                <td className=" text-center">{formatDate(el.updatedAt)}</td>
-                {/* <td className=" text-center">{formatDate(el.updatedAt).split(' ')[1]}</td> */}
+                <td className=" text-center">{formatDataTH(el.updatedAt)}</td>
                 <td>{el.NE_name}</td>
                 <td>
                   <p className="line-clamp-2">{el.NE_detail}</p>
