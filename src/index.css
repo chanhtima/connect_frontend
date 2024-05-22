@@ -50,3 +50,6 @@ body {
 .btn_link{
   @apply btn bg-dark-blue hover:bg-dark-blue/95 text-white rounded-2xl px-8
 }
+.breadcrumbs > ul > li + *:before, .breadcrumbs > ol > li + *:before{
+  display: none;
+}
