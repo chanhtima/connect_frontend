@@ -24,7 +24,7 @@ function CarouselProduct() {
     >
       {category_product.map((item, idx) => (
         <SplideSlide key={idx}>
-          <Link to={`/products/${item.label}`}>
+          <Link to={`/products/${item.name}`}>
             <CardCategory data={item} />
           </Link>
         </SplideSlide>

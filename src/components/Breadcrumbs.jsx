@@ -23,10 +23,12 @@ function Breadcrumbs({ page_url, page_name, sub_page, title_name }) {
           )}
         </ul>
       </div>
-      <div className=" flex items-center justify-between">
-        <h1 className="text-[34px] pr-4">{page_name}</h1>
-        <span className="border-b-4  border-black w-[70%] xl:w-[80%]  max-md:hidden"></span>
-      </div>
+      {page_name && (
+        <div className=" flex items-center justify-between">
+          <h1 className="text-[34px] pr-4">{page_name}</h1>
+          <span className="border-b-4  border-black w-[70%] xl:w-[80%]  max-md:hidden"></span>
+        </div>
+      )}
     </div>
   );
 }
