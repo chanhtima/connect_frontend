@@ -13,6 +13,7 @@ import ProductCategory from "./pages/Users/product/ProductCategory";
 import ProductDetail from "./pages/Users/product/ProductDetail";
 import NewsArticles from "./pages/Users/news/NewsArticles";
 import NewsArticleDetail from "./pages/Users/news/NewsArticleDetail";
+import Contact from "./pages/Users/Contact";
 
 function App() {
   const isAuthenticated = !!localStorage.getItem("token");
@@ -29,6 +30,7 @@ function App() {
           <Route path="/productdetail/:id" element={<ProductDetail/>} />
           <Route path="/news" element={<NewsArticles/>} />
           <Route path="/newsdetail/:id" element={<NewsArticleDetail/>} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
         <Route
