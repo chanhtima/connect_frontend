@@ -48,8 +48,8 @@ function ProductDetail() {
                     key={index}
                     src={`data:${image.image_type};base64,${image.image}`}
                     alt={`Thumbnail ${index}`}
-                    className={`object-cover cursor-pointer border p-4 rounded-xl max-h-[9.5rem] ${
-                      index === currentIndex ? "border-blue-2 border-2" : ""
+                    className={`object-cover cursor-pointer border-2 p-4 rounded-xl max-h-[9.5rem] ${
+                      index === currentIndex ? "border-blue-2 " : ""
                     }`}
                     onClick={() => handleThumbnailClick(image, index)}
                   />

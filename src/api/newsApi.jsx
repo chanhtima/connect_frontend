@@ -11,9 +11,9 @@ function getQueryString(search) {
   export function getNewsAll(filter) {
     return defaultAxios.get(`/news?${getQueryString(filter)}`);
   }
-//   export function getProductId(id) {
-//     return defaultAxios.get(`/product/${id}`);
-//   }
+  export function getNewsId(id) {
+    return defaultAxios.get(`/news/${id}`);
+  }
 //   export function deleteId(id) {
 //     return defaultAxios.delete(`/product/${id}`);
 //   }

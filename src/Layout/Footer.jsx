@@ -9,13 +9,13 @@ function Footer() {
   return (
     <div className=" border-t-2 border-dark-blue/40">
       {/* top footer */}
-      <div className="section-container flex max-lg:flex-col gap-8 items-center justify-between">
+      <div className="px-12 md:px-24  xl:px-40 py-4 flex max-lg:flex-col gap-8 items-center justify-between">
         <div className="gap-4 flex flex-col max-lg:items-center">
           <Link to={"/"}>
             <img
               src="/images/LOGOArtboard.png"
               alt="logo "
-              width={300}
+              width={200}
               height={20}
             />
           </Link>
@@ -28,22 +28,22 @@ function Footer() {
           </div>
         </div>
         {/* icon */}
-        <div className=" flex gap-4">
+        <div className=" flex gap-4 ">
           <Link to={"/"}>
-            <img src={Ficon} alt="icon" />
+            <img src={Ficon} alt="icon"  className="w-10" />
           </Link>
           <Link to={"/"}>
-            <img src={Iicon} alt="icon" />
+            <img src={Iicon} alt="icon" className="w-10" />
           </Link>{" "}
           <Link to={"/"}>
-            <img src={Yicon} alt="icon" />
+            <img src={Yicon} alt="icon" className="w-10" />
           </Link>{" "}
           <Link to={"/"}>
-            <img src={Eicon} alt="icon" />
+            <img src={Eicon} alt="icon" className="w-10" />
           </Link>
         </div>
       </div>
-      <div className=" bg-dark-blue text-white flex items-center justify-between px-12 md:px-24 py-2">
+      <div className=" bg-dark-blue text-white flex flex-wrap items-center justify-between px-12 md:px-24 py-2">
         <p>Privacy Policy</p>
         <p>Copyright © 2023 Connect Asia Interfood Co., Ltd.</p>
       </div>

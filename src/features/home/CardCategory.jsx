@@ -2,7 +2,7 @@ import React from "react";
 
 function CardCategory({ data }) {
   return (
-    <div className="relative h-[30rem] p-2">
+    <div className="relative h-[35rem] p-2">
       <div className="relative h-full">
         <img
           src={data.image}

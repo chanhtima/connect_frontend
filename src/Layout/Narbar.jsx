@@ -12,7 +12,7 @@ function Narbar() {
         <Link
           to={item.url}
           key={idx}
-          className={`hover:text-blue-3  max-lg:h-10 text-xl ${
+          className={`hover:text-blue-3  max-lg:h-10 text-lg ${
             location.pathname === item.url
               ? " text-blue-3 m:border-b md:border-blue-3"
               : ""
@@ -25,13 +25,13 @@ function Narbar() {
   );
   return (
     <>
-      <nav className="sticky top-0 z-50 w-full px-12 md:px-24 py-6  bg-white shadow-md">
+      <nav className="sticky top-0 z-50 w-full px-12 md:px-24 py-2  bg-white shadow-md">
         <div className=" flex items-center justify-between">
           <Link to={"/"}>
             <img
               src="/images/LOGOArtboard.png"
               alt="logo "
-              width={180}
+              width={120}
               height={20}
             />
           </Link>

@@ -11,7 +11,7 @@ function CardImageNews({ data }) {
             <img
               src={`data:${data.NE_image[0].image_type};base64,${data.NE_image[0].image}`}
               alt="Product Image"
-              className="w-full   max-h-[19rem] object-cover rounded-t-lg"
+              className="w-full   max-h-[14rem] object-cover rounded-t-lg"
             />
           )}
         </figure>
@@ -26,7 +26,7 @@ function CardImageNews({ data }) {
       </div>
 
       <div className="card-body min-h-[12.75rem]">
-        <h2 className="card-title line-clamp-1 text-[24px] hover:text-blue-2">{data.NE_name}</h2>
+        <h2 className="card-title line-clamp-1 text-[18px] hover:text-blue-2">{data.NE_name}</h2>
         <p className="line-clamp-3  ">{data.NE_detail}</p>
         <div className="card-actions">
           <button  className=" font-semibold">Read more</button>

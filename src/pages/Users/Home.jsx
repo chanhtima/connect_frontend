@@ -73,7 +73,7 @@ function Home() {
           {/* news not image */}
           {newsList.slice(0, 3).map((item, idx) => (
             <div key={idx} className="mb-3 pb-3 border-b-4">
-              <Link to={`/news/${item._id}`}>
+              <Link to={`/newsdetail/${item._id}`}>
                 <CardNoImageNews data={item} />
               </Link>
             </div>
@@ -84,7 +84,7 @@ function Home() {
                 key={idx}
                 className=" col-span-12 sm:col-span-6 xl:col-span-3"
               >
-                <Link to={`/news/${item._id}`}>
+                <Link to={`/newsdetail/${item._id}`}>
                   <CardImageNews data={item} />
                 </Link>
               </div>
